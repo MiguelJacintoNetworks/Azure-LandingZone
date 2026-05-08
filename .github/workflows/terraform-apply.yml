@@ -1,0 +1,77 @@
+name: TERRAFORM APPLY
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  TF_IN_AUTOMATION: "true"
+  CORE_WORKING_DIRECTORY: "infra/env/dev"
+  GOVERNANCE_WORKING_DIRECTORY: "infra/env/governance/dev"
+
+jobs:
+  terraform-apply-core:
+    name: TERRAFORM APPLY CORE
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ${{ env.CORE_WORKING_DIRECTORY }}
+
+    steps:
+      - name: CHECKOUT REPOSITORY
+        uses: actions/checkout@v4
+
+      - name: AZURE LOGIN WITH OIDC
+        uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      - name: SETUP TERRAFORM
+        uses: hashicorp/setup-terraform@v3
+
+      - name: TERRAFORM INIT
+        run: terraform init
+
+      - name: TERRAFORM VALIDATE
+        run: terraform validate
+
+      - name: TERRAFORM APPLY
+        run: terraform apply -auto-approve -input=false
+
+  terraform-apply-governance:
+    name: TERRAFORM APPLY GOVERNANCE
+    runs-on: ubuntu-latest
+    needs: terraform-apply-core
+
+    defaults:
+      run:
+        working-directory: ${{ env.GOVERNANCE_WORKING_DIRECTORY }}
+
+    steps:
+      - name: CHECKOUT REPOSITORY
+        uses: actions/checkout@v4
+
+      - name: AZURE LOGIN WITH OIDC
+        uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      - name: SETUP TERRAFORM
+        uses: hashicorp/setup-terraform@v3
+
+      - name: TERRAFORM INIT
+        run: terraform init
+
+      - name: TERRAFORM VALIDATE
+        run: terraform validate
+
+      - name: TERRAFORM APPLY
+        run: terraform apply -auto-approve -input=false

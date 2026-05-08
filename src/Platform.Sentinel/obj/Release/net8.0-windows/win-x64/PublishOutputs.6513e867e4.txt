@@ -1,0 +1,3 @@
+C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\.generated\platform-sentinel\publish\appsettings.json
+C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\.generated\platform-sentinel\publish\Platform.Sentinel.pdb
+C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\.generated\platform-sentinel\publish\Platform.Sentinel.exe
