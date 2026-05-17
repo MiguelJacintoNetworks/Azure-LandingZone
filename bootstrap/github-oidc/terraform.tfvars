@@ -1,1 +1,3 @@
-github_repository = "YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME"
+project_name      = "Azure-LandingZone"
+github_repository = "MiguelJacintoNetworks/Azure-LandingZone"
+github_branch     = "main"

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Platform.Sentinel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9892c8f3dce848054cbb6a3682aa92a6e54b6af8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Platform.Sentinel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Platform.Sentinel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

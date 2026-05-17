@@ -25,9 +25,3 @@ import {
   to       = module.defender_for_servers_pricing[each.key].azurerm_security_center_subscription_pricing.this
   id       = "/subscriptions/${local.target_subscription_id}/providers/Microsoft.Security/pricings/${each.value.resource_type}"
 }
-
-import {
-  for_each = local.defender_security_contact_configs
-  to       = module.defender_security_contact[each.key].azurerm_security_center_contact.this
-  id       = "/subscriptions/${local.target_subscription_id}/providers/Microsoft.Security/securityContacts/${each.key}"
-}

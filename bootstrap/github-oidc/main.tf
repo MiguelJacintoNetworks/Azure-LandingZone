@@ -20,6 +20,18 @@ resource "azuread_application_federated_identity_credential" "github_oidc" {
   subject = "repo:${var.github_repository}:ref:refs/heads/${var.github_branch}"
 }
 
+resource "azuread_application_federated_identity_credential" "github_oidc_pull_request" {
+  application_id = azuread_application.github_actions.id
+
+  display_name = "github-actions-pull-request"
+
+  audiences = ["api://AzureADTokenExchange"]
+
+  issuer = "https://token.actions.githubusercontent.com"
+
+  subject = "repo:${var.github_repository}:pull_request"
+}
+
 resource "azurerm_role_assignment" "github_actions_contributor" {
   scope                = "/subscriptions/${data.azurerm_client_config.current.subscription_id}"
   role_definition_name = "Contributor"

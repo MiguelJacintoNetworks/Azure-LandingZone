@@ -5,8 +5,13 @@ variable "project_name" {
 }
 
 variable "github_repository" {
-  description = "GITHUB REPOSITORY IN THE FORMAT owner/repo."
+  description = "GITHUB REPOSITORY IN THE FORMAT OWNER/REPO"
   type        = string
+
+  validation {
+    condition     = can(regex("^[^/]+/[^/]+$", var.github_repository))
+    error_message = "THE GITHUB REPOSITORY MUST BE IN THE FORMAT OWNER/REPO."
+  }
 }
 
 variable "github_branch" {

@@ -227,7 +227,6 @@ C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\bin\Rel
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\bin\Release\net8.0-windows\win-x64\hostfxr.dll
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\bin\Release\net8.0-windows\win-x64\hostpolicy.dll
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\bin\Release\net8.0-windows\win-x64\mscordaccore.dll
-C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\bin\Release\net8.0-windows\win-x64\mscordaccore_amd64_amd64_8.0.2526.11203.dll
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\bin\Release\net8.0-windows\win-x64\mscordbi.dll
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\bin\Release\net8.0-windows\win-x64\mscorrc.dll
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\bin\Release\net8.0-windows\win-x64\msquic.dll
@@ -242,3 +241,5 @@ C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\obj\Rel
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\obj\Release\net8.0-windows\win-x64\Platform.Sentinel.pdb
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\obj\Release\net8.0-windows\win-x64\Platform.Sentinel.genruntimeconfig.cache
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\obj\Release\net8.0-windows\win-x64\ref\Platform.Sentinel.dll
+C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\bin\Release\net8.0-windows\win-x64\mscordaccore_amd64_amd64_8.0.2626.16921.dll
+C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\obj\Release\net8.0-windows\win-x64\Platform.Sentinel.sourcelink.json

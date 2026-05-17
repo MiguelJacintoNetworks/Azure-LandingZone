@@ -67,3 +67,4 @@ C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\obj\Rel
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\obj\Release\net8.0-windows\Platform.Sentinel.pdb
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\obj\Release\net8.0-windows\Platform.Sentinel.genruntimeconfig.cache
 C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\obj\Release\net8.0-windows\ref\Platform.Sentinel.dll
+C:\Users\User01\Documents\MIGUEL\Azure\LandingZone\src\Platform.Sentinel\obj\Release\net8.0-windows\Platform.Sentinel.sourcelink.json
